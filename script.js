@@ -33,13 +33,13 @@ const NEGOZI = [
   },
   {
     nome: "Tarquinia",
-    indirizzo: "indirizzo da confermare",
-    indirizzoDaConfermare: true,
+    indirizzo: "Via Roma 4, 01016 Tarquinia (VT)",
+    indirizzoDaConfermare: false,
     orari: ORARI_STANDARD,
     orariDaConfermare: true,
     telefono: "338 200 9498",
     telefonoDaConfermare: true,
-    mapsQuery: "Antinea Boutique, Tarquinia VT"
+    mapsQuery: "Antinea Boutique, Via Roma 4, Tarquinia"
   },
   {
     nome: "Tarquinia Lido",
