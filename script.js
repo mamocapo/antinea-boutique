@@ -22,7 +22,7 @@ const NEGOZI = [
     mapsQuery: "Antinea Boutique, Lungomare Harmine 55, Montalto di Castro"
   },
   {
-    nome: "Antinea Beachwear · Montalto Marina",
+    nome: "Antinea Beachwear · Marina di Montalto di Castro",
     indirizzo: "Largo Clitunno, 01014 Montalto di Castro (VT)",
     indirizzoDaConfermare: false,
     orari: ORARI_STANDARD,
