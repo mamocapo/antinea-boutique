@@ -19,7 +19,17 @@ const NEGOZI = [
     orariDaConfermare: true,
     telefono: "338 200 9498",
     telefonoDaConfermare: true,
-    mapsQuery: "Antinea Boutique, Lungomare Harmine, Montalto di Castro"
+    mapsQuery: "Antinea Boutique, Lungomare Harmine 55, Montalto di Castro"
+  },
+  {
+    nome: "Antinea Beachwear · Montalto Marina",
+    indirizzo: "Largo Clitunno, 01014 Montalto di Castro (VT)",
+    indirizzoDaConfermare: false,
+    orari: ORARI_STANDARD,
+    orariDaConfermare: true,
+    telefono: "338 200 9498",
+    telefonoDaConfermare: true,
+    mapsQuery: "Antinea Beachwear, Largo Clitunno, Montalto di Castro"
   },
   {
     nome: "Tarquinia",
@@ -29,37 +39,27 @@ const NEGOZI = [
     orariDaConfermare: true,
     telefono: "338 200 9498",
     telefonoDaConfermare: true,
-    mapsQuery: "Antinea Boutique, Tarquinia"
+    mapsQuery: "Antinea Boutique, Tarquinia VT"
   },
   {
     nome: "Tarquinia Lido",
-    indirizzo: "indirizzo da confermare",
-    indirizzoDaConfermare: true,
+    indirizzo: "Lungomare dei Tirreni 76, 01016 Tarquinia (VT)",
+    indirizzoDaConfermare: false,
     orari: ORARI_STANDARD,
     orariDaConfermare: true,
     telefono: "338 200 9498",
     telefonoDaConfermare: true,
-    mapsQuery: "Antinea Boutique, Tarquinia Lido"
+    mapsQuery: "Antinea Boutique, Lungomare dei Tirreni 76, Tarquinia Lido"
   },
   {
     nome: "Capalbio Scalo",
-    indirizzo: "indirizzo da confermare",
-    indirizzoDaConfermare: true,
+    indirizzo: "Viale Umbria 5/6, 58011 Capalbio (GR)",
+    indirizzoDaConfermare: false,
     orari: ORARI_STANDARD,
     orariDaConfermare: true,
     telefono: "338 200 9498",
     telefonoDaConfermare: true,
-    mapsQuery: "Antinea Boutique, Capalbio Scalo"
-  },
-  {
-    nome: "Quinta sede",
-    indirizzo: "località e indirizzo da confermare",
-    indirizzoDaConfermare: true,
-    orari: ORARI_STANDARD,
-    orariDaConfermare: true,
-    telefono: "338 200 9498",
-    telefonoDaConfermare: true,
-    mapsQuery: "Antinea Boutique"
+    mapsQuery: "Antinea Boutique, Viale Umbria 5, Capalbio Scalo"
   }
 ];
 
@@ -83,8 +83,8 @@ const sedi = document.querySelector("#sedi");
 
 sedi.innerHTML = NEGOZI.map((n) => `
   <article class="sede">
-    <h2>${n.nome}${badge(n.indirizzoDaConfermare && n.nome === "Quinta sede")}</h2>
-    <p class="indirizzo">${n.indirizzo}${badge(n.indirizzoDaConfermare && n.nome !== "Quinta sede")}</p>
+    <h2>${n.nome}</h2>
+    <p class="indirizzo">${n.indirizzo}${badge(n.indirizzoDaConfermare)}</p>
     <p class="orari">${n.orari}${badge(n.orariDaConfermare)}</p>
     <div class="azioni">
       <a class="btn btn-primario" href="${mapsUrl(n.mapsQuery)}" target="_blank" rel="noopener">Indicazioni →</a>
