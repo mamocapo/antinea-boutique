@@ -153,7 +153,108 @@ footer {
   font-size: 1rem;
 }
 
-/* ---------- desktop: un filo più ariosa ---------- */
+/* ---------- menu sedi / catalogo ---------- */
+.menu {
+  margin-top: 16px;
+  font-size: 0.85rem;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+.menu a {
+  color: var(--grigio);
+  text-decoration: none;
+  padding: 0 8px;
+}
+.menu a.attivo { color: var(--turchese-scuro); }
+.menu a:hover { color: var(--inchiostro); }
+
+/* ---------- catalogo prodotti ---------- */
+.griglia-prodotti {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px 28px;
+  padding-top: 24px;
+}
+
+.prodotto { text-align: left; }
+
+.foto-wrap {
+  background: #fff;
+  border: 1px solid var(--hairline);
+  aspect-ratio: 3 / 4;
+  overflow: hidden;
+  margin-bottom: 14px;
+}
+.foto-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.marca {
+  font-size: 0.72rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--turchese-scuro);
+}
+.nome {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 1.15;
+  margin: 2px 0 4px;
+}
+.prezzo {
+  font-size: 1rem;
+  color: var(--inchiostro);
+  margin-bottom: 14px;
+}
+
+.taglie {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-bottom: 16px;
+}
+.taglia {
+  font-family: "Jost", sans-serif;
+  font-size: 0.8rem;
+  min-width: 38px;
+  padding: 6px 4px;
+  background: transparent;
+  border: 1px solid var(--hairline);
+  color: var(--inchiostro);
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+.taglia:hover { border-color: var(--turchese); }
+.taglia.scelta {
+  background: var(--inchiostro);
+  color: #fff;
+  border-color: var(--inchiostro);
+}
+
+.btn-ordina {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  background: var(--turchese);
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.8rem;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding: 13px 18px;
+  border-radius: 2px;
+  transition: background 0.2s ease;
+}
+.btn-ordina:hover { background: var(--turchese-scuro); }
+
+/* ---------- desktop ---------- */
 @media (min-width: 600px) {
   .logo { width: 260px; }
+  header, footer { max-width: 560px; }
+  main.griglia-prodotti { max-width: 860px; }
+  .griglia-prodotti { grid-template-columns: 1fr 1fr 1fr; }
 }
