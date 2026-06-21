@@ -4,8 +4,8 @@
    accanto comparirà un piccolo segnale "da confermare".
    ============================================================ */
 
-const EMAIL = "info@antineaboutique.it";      // DA CONFERMARE
-const EMAIL_DA_CONFERMARE = true;
+const EMAIL = "boutiqueantinea@gmail.com";
+const EMAIL_DA_CONFERMARE = false;
 
 // Orari ipotizzati (uguali per tutti finché non mi confermi i veri)
 const ORARI_STANDARD = "Tutti i giorni · 9:30–13:00 / 16:30–20:00";
@@ -13,13 +13,13 @@ const ORARI_STANDARD = "Tutti i giorni · 9:30–13:00 / 16:30–20:00";
 const NEGOZI = [
   {
     nome: "Marina di Montalto di Castro",
-    indirizzo: "Lungomare Harmine 55, 01014 Montalto di Castro (VT)",
+    indirizzo: "Lungomare Harmine 55-56, 01014 Montalto di Castro (VT)",
     indirizzoDaConfermare: false,
     orari: ORARI_STANDARD,
     orariDaConfermare: true,
-    telefono: "338 200 9498",
-    telefonoDaConfermare: true,
-    mapsQuery: "Antinea Boutique, Lungomare Harmine 55, Montalto di Castro"
+    telefono: "0766 1901897",
+    telefonoDaConfermare: false,
+    mapsQuery: "Antinea Boutique, Lungomare Harmine, Montalto di Castro"
   },
   {
     nome: "Antinea Beachwear · Marina di Montalto di Castro",
@@ -27,19 +27,19 @@ const NEGOZI = [
     indirizzoDaConfermare: false,
     orari: ORARI_STANDARD,
     orariDaConfermare: true,
-    telefono: "338 200 9498",
-    telefonoDaConfermare: true,
+    telefono: "345 3303224",
+    telefonoDaConfermare: false,
     mapsQuery: "Antinea Beachwear, Largo Clitunno, Montalto di Castro"
   },
   {
     nome: "Tarquinia",
-    indirizzo: "Via Roma 4, 01016 Tarquinia (VT)",
+    indirizzo: "Piazza San Giovanni 1, 01016 Tarquinia (VT)",
     indirizzoDaConfermare: false,
     orari: ORARI_STANDARD,
     orariDaConfermare: true,
-    telefono: "338 200 9498",
-    telefonoDaConfermare: true,
-    mapsQuery: "Antinea Boutique, Via Roma 4, Tarquinia"
+    telefono: "0766 1890427",
+    telefonoDaConfermare: false,
+    mapsQuery: "Antinea Boutique, Piazza San Giovanni 1, Tarquinia"
   },
   {
     nome: "Tarquinia Lido",
@@ -47,19 +47,19 @@ const NEGOZI = [
     indirizzoDaConfermare: false,
     orari: ORARI_STANDARD,
     orariDaConfermare: true,
-    telefono: "338 200 9498",
-    telefonoDaConfermare: true,
+    telefono: "379 1859876",
+    telefonoDaConfermare: false,
     mapsQuery: "Antinea Boutique, Lungomare dei Tirreni 76, Tarquinia Lido"
   },
   {
-    nome: "Capalbio Scalo",
-    indirizzo: "Viale Umbria 5/6, 58011 Capalbio (GR)",
+    nome: "Capalbio Marina",
+    indirizzo: "Via Umbria 10, 58011 Capalbio (GR)",
     indirizzoDaConfermare: false,
     orari: ORARI_STANDARD,
     orariDaConfermare: true,
-    telefono: "338 200 9498",
-    telefonoDaConfermare: true,
-    mapsQuery: "Antinea Boutique, Viale Umbria 5, Capalbio Scalo"
+    telefono: "345 1696780",
+    telefonoDaConfermare: false,
+    mapsQuery: "Antinea Boutique, Via Umbria 10, Capalbio"
   }
 ];
 
