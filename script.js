@@ -20,7 +20,7 @@ const NEGOZI = [
     orariDaConfermare: false,
     telefono: "0766 1901897",
     telefonoDaConfermare: false,
-    mapsQuery: "Antinea Boutique, Lungomare Harmine, Montalto di Castro"
+    mapsQuery: "Lungomare Harmine 55, 01014 Montalto di Castro VT"
   },
   {
     nome: "Antinea Beachwear · Marina di Montalto di Castro",
@@ -30,7 +30,7 @@ const NEGOZI = [
     orariDaConfermare: false,
     telefono: "345 3303224",
     telefonoDaConfermare: false,
-    mapsQuery: "Antinea Beachwear, Largo Clitunno, Montalto di Castro"
+    mapsQuery: "Largo Clitunno, 01014 Montalto di Castro VT"
   },
   {
     nome: "Tarquinia",
@@ -40,7 +40,7 @@ const NEGOZI = [
     orariDaConfermare: false,
     telefono: "0766 1890427",
     telefonoDaConfermare: false,
-    mapsQuery: "Antinea Boutique, Piazza San Giovanni 1, Tarquinia"
+    mapsQuery: "Piazza San Giovanni 1, 01016 Tarquinia VT"
   },
   {
     nome: "Tarquinia Lido",
@@ -50,7 +50,7 @@ const NEGOZI = [
     orariDaConfermare: false,
     telefono: "379 1859876",
     telefonoDaConfermare: false,
-    mapsQuery: "Antinea Boutique, Lungomare dei Tirreni 76, Tarquinia Lido"
+    mapsQuery: "Lungomare dei Tirreni 76, 01016 Tarquinia VT"
   },
   {
     nome: "Capalbio Marina",
@@ -60,7 +60,7 @@ const NEGOZI = [
     orariDaConfermare: false,
     telefono: "345 1696780",
     telefonoDaConfermare: false,
-    mapsQuery: "Antinea Boutique, Via Umbria 10, Capalbio"
+    mapsQuery: "Via Umbria 10, 58011 Capalbio GR"
   }
 ];
 
