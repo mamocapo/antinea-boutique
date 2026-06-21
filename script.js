@@ -7,16 +7,17 @@
 const EMAIL = "boutiqueantinea@gmail.com";
 const EMAIL_DA_CONFERMARE = false;
 
-// Orari ipotizzati (uguali per tutti finché non mi confermi i veri)
+// Orari di apertura
 const ORARI_STANDARD = "Tutti i giorni · 9:30–13:00 / 16:30–20:00";
+const ORARI_MONTALTO = "Tutti i giorni · 9:30–13:00 / 16:30–20:00<br>Sabato sera anche 22:00–24:00";
 
 const NEGOZI = [
   {
     nome: "Marina di Montalto di Castro",
     indirizzo: "Lungomare Harmine 55-56, 01014 Montalto di Castro (VT)",
     indirizzoDaConfermare: false,
-    orari: ORARI_STANDARD,
-    orariDaConfermare: true,
+    orari: ORARI_MONTALTO,
+    orariDaConfermare: false,
     telefono: "0766 1901897",
     telefonoDaConfermare: false,
     mapsQuery: "Antinea Boutique, Lungomare Harmine, Montalto di Castro"
@@ -25,8 +26,8 @@ const NEGOZI = [
     nome: "Antinea Beachwear · Marina di Montalto di Castro",
     indirizzo: "Largo Clitunno, 01014 Montalto di Castro (VT)",
     indirizzoDaConfermare: false,
-    orari: ORARI_STANDARD,
-    orariDaConfermare: true,
+    orari: ORARI_MONTALTO,
+    orariDaConfermare: false,
     telefono: "345 3303224",
     telefonoDaConfermare: false,
     mapsQuery: "Antinea Beachwear, Largo Clitunno, Montalto di Castro"
@@ -36,7 +37,7 @@ const NEGOZI = [
     indirizzo: "Piazza San Giovanni 1, 01016 Tarquinia (VT)",
     indirizzoDaConfermare: false,
     orari: ORARI_STANDARD,
-    orariDaConfermare: true,
+    orariDaConfermare: false,
     telefono: "0766 1890427",
     telefonoDaConfermare: false,
     mapsQuery: "Antinea Boutique, Piazza San Giovanni 1, Tarquinia"
@@ -46,7 +47,7 @@ const NEGOZI = [
     indirizzo: "Lungomare dei Tirreni 76, 01016 Tarquinia (VT)",
     indirizzoDaConfermare: false,
     orari: ORARI_STANDARD,
-    orariDaConfermare: true,
+    orariDaConfermare: false,
     telefono: "379 1859876",
     telefonoDaConfermare: false,
     mapsQuery: "Antinea Boutique, Lungomare dei Tirreni 76, Tarquinia Lido"
@@ -56,7 +57,7 @@ const NEGOZI = [
     indirizzo: "Via Umbria 10, 58011 Capalbio (GR)",
     indirizzoDaConfermare: false,
     orari: ORARI_STANDARD,
-    orariDaConfermare: true,
+    orariDaConfermare: false,
     telefono: "345 1696780",
     telefonoDaConfermare: false,
     mapsQuery: "Antinea Boutique, Via Umbria 10, Capalbio"
