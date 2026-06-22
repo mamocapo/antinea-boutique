@@ -8,9 +8,9 @@ const EMAIL = "boutiqueantinea@gmail.com";
 const EMAIL_DA_CONFERMARE = false;
 
 // Orari di apertura
-const ORARI_STANDARD = "Tutti i giorni · 9:30–13:00 / 16:30–20:00";
-const ORARI_MONTALTO = "Tutti i giorni · 9:30–13:00 / 16:30–20:00<br>Sabato sera anche 22:00–24:00";
-const ORARI_TARQUINIA = "9:30–13:00 / 16:30–20:00<br>Chiuso il martedì · in estate anche la domenica";
+const ORARI_STANDARD = "Tutti i giorni · 10:00–13:00 / 17:00–20:00";
+const ORARI_MONTALTO = "Tutti i giorni · 10:00–13:00 / 17:00–20:00<br>Anche tutte le sere 22:00–24:00";
+const ORARI_TARQUINIA = "10:00–13:00 / 17:00–20:00<br>Chiuso il martedì · in estate anche la domenica";
 
 const NEGOZI = [
   {
