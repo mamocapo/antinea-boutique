@@ -7,17 +7,15 @@
 const EMAIL = "boutiqueantinea@gmail.com";
 const EMAIL_DA_CONFERMARE = false;
 
-// Orari di apertura
-const ORARI_STANDARD = "Tutti i giorni · 10:00–13:00 / 17:00–20:00";
-const ORARI_MONTALTO = "Tutti i giorni · 10:00–13:00 / 17:00–20:00<br>Anche tutte le sere 22:00–24:00";
-const ORARI_TARQUINIA = "10:00–13:00 / 17:00–20:00<br>Chiuso il martedì · in estate anche la domenica";
+// Orari di apertura — STAGIONE INVERNALE
+const CHIUSO_STAGIONE = "Chiuso per la stagione · riapre in primavera";
 
 const NEGOZI = [
   {
     nome: "Marina di Montalto di Castro",
     indirizzo: "Lungomare Harmine 55-56, 01014 Montalto di Castro (VT)",
     indirizzoDaConfermare: false,
-    orari: ORARI_MONTALTO,
+    orari: "Lun · Gio · Ven · Sab · Dom<br>10:00–13:00 / 16:00–19:00",
     orariDaConfermare: false,
     telefono: "0766 1901897",
     telefonoDaConfermare: false,
@@ -27,7 +25,8 @@ const NEGOZI = [
     nome: "Antinea Beachwear · Marina di Montalto di Castro",
     indirizzo: "Largo Clitunno, 01014 Montalto di Castro (VT)",
     indirizzoDaConfermare: false,
-    orari: ORARI_MONTALTO,
+    chiuso: true,
+    orari: CHIUSO_STAGIONE,
     orariDaConfermare: false,
     telefono: "345 3303224",
     telefonoDaConfermare: false,
@@ -37,7 +36,7 @@ const NEGOZI = [
     nome: "Tarquinia",
     indirizzo: "Piazza San Giovanni 1, 01016 Tarquinia (VT)",
     indirizzoDaConfermare: false,
-    orari: ORARI_TARQUINIA,
+    orari: "Tutti i giorni, domenica inclusa<br>10:00–13:00 / 16:00–19:00",
     orariDaConfermare: false,
     telefono: "0766 1890427",
     telefonoDaConfermare: false,
@@ -47,7 +46,8 @@ const NEGOZI = [
     nome: "Tarquinia Lido",
     indirizzo: "Lungomare dei Tirreni 76, 01016 Tarquinia (VT)",
     indirizzoDaConfermare: false,
-    orari: ORARI_STANDARD,
+    chiuso: true,
+    orari: CHIUSO_STAGIONE,
     orariDaConfermare: false,
     telefono: "379 1859876",
     telefonoDaConfermare: false,
@@ -57,7 +57,7 @@ const NEGOZI = [
     nome: "Capalbio Marina",
     indirizzo: "Via Umbria 10, 58011 Capalbio (GR)",
     indirizzoDaConfermare: false,
-    orari: ORARI_STANDARD,
+    orari: "Ven · Sab · 10:00–13:00 / 16:00–19:00<br>Dom · 10:00–13:00",
     orariDaConfermare: false,
     telefono: "345 1696780",
     telefonoDaConfermare: false,
@@ -84,10 +84,10 @@ function telPulito(t) {
 const sedi = document.querySelector("#sedi");
 
 sedi.innerHTML = NEGOZI.map((n) => `
-  <article class="sede">
+  <article class="sede${n.chiuso ? " chiusa" : ""}">
     <h2>${n.nome}</h2>
     <p class="indirizzo">${n.indirizzo}${badge(n.indirizzoDaConfermare)}</p>
-    <p class="orari">${n.orari}${badge(n.orariDaConfermare)}</p>
+    <p class="orari${n.chiuso ? " chiuso-nota" : ""}">${n.orari}${badge(n.orariDaConfermare)}</p>
     <div class="azioni">
       <a class="btn btn-primario" href="${mapsUrl(n.mapsQuery)}" target="_blank" rel="noopener">Indicazioni →</a>
       <a class="btn btn-secondario" href="${telPulito(n.telefono)}">Chiama</a>

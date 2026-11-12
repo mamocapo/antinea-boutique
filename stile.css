@@ -75,6 +75,15 @@ header {
   color: var(--grigio);
 }
 
+/* sede chiusa per la stagione */
+.sede.chiusa .indirizzo { color: var(--grigio); }
+.chiuso-nota {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-style: italic;
+  font-size: 1.05rem;
+  color: var(--turchese-scuro);
+}
+
 /* segnale discreto per i dati non verificati */
 .da-confermare {
   display: inline-block;
